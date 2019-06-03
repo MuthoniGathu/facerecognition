@@ -75,7 +75,7 @@ class App extends Component {
 
    onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-      fetch('https://sheltered-wave-77773.herokuapp.com//imageurl', {
+      fetch('https://sheltered-wave-77773.herokuapp.com/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
